@@ -2,12 +2,10 @@ import React, { useState, useEffect } from "react";
 import Body from "./Body";
 
 const Header = () => {
-  let name = '< CHANG CAI > | SOFTWARE DEVELOPER'
-  
   return (
     <header>
-      <h1 className="name" onClick={() => console.log('hi')}>{name}</h1>
-      <div class="pf_links">
+      <h1 className="name">{`< CHANG CAI > | SOFTWARE DEVELOPER`}</h1>
+      <div className="pf_links">
         <a href="http://github.com/ccai89" alt="github_logo">
           <img scr=""></img>
         </a>
