@@ -2,10 +2,10 @@ import { render } from "react-dom";
 import Header from './Header';
 import Body from './Body';
 import NavBar from './NavBar';
-import { useState } from 'react';
+import React, { useState } from 'react';
 const App = () => {
-  const [currentPage, setCurrentPage] = useState("home")
-
+  const [currentPage, setCurrentPage] = useState("home");
+  
   return (
     <div>
       <Header/>

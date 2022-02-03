@@ -29700,7 +29700,11 @@ var _Body = _interopRequireDefault(require("./Body"));
 
 var _NavBar = _interopRequireDefault(require("./NavBar"));
 
-var _react = require("react");
+var _react = _interopRequireWildcard(require("react"));
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29724,17 +29728,17 @@ var App = function App() {
 
   return (
     /*#__PURE__*/
-    React.createElement("div", null,
+    _react.default.createElement("div", null,
     /*#__PURE__*/
-    React.createElement(_Header.default, null),
+    _react.default.createElement(_Header.default, null),
     /*#__PURE__*/
-    React.createElement("hr", null),
+    _react.default.createElement("hr", null),
     /*#__PURE__*/
-    React.createElement(_NavBar.default, {
+    _react.default.createElement(_NavBar.default, {
       setCurrentPage: setCurrentPage
     }),
     /*#__PURE__*/
-    React.createElement(_Body.default, {
+    _react.default.createElement(_Body.default, {
       currentPage: currentPage
     }))
   );
@@ -29742,7 +29746,7 @@ var App = function App() {
 
 (0, _reactDom.render)(
 /*#__PURE__*/
-React.createElement(App, null), document.getElementById("root"));
+_react.default.createElement(App, null), document.getElementById("root"));
 },{"react-dom":"../node_modules/react-dom/index.js","./Header":"Header.jsx","./Body":"Body.jsx","./NavBar":"NavBar.jsx","react":"../node_modules/react/index.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -29771,7 +29775,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56229" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56554" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
