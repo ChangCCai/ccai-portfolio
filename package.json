@@ -7,7 +7,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "dev": "parcel src/index.html",
-    "start": "parcel src/index.html — open",
+    "start": "./node_modules/parcel-bundler/bin/cli.js src/index.html",
     "build": "parcel build src/index.html",
     "heroku-postbuild" : "parcel build src/index.html"
   },
