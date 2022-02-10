@@ -15,7 +15,10 @@ const Body = () => {
         <p>
           {`I am passionate about all things engineering 
              whether the medium is code, wood, 3D filaments 
-             and resins, fabric or otherwise. He’s a natural 
+             and resins, fabric or otherwise.`}
+             </p>
+            <p>{` 
+             I am a natural 
              born tinkerer with endless curiosity, always 
              seeking new things to learn and new skills to 
              master.`}
